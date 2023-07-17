@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.slider-container{
+    width: 100%;
+    height: 100vh;
+    background-color: #f1f1f1;
+    position: relative;
+    transition: all 1s linear;
+}
+.slider-container:hover{
+    background-color: #5c9aeb;
+}
+.slider-container:hover h1{
+    color: #ddd;
+}
+.slider-container:hover p{
+    color: #f1f1f1;
+}
+.slider-container:hover a{
+    background-color: #f1f1f1;
+}
+.slider-container-fluid{
+    width: 600px;
+    height: 380px;
+    position:absolute;
+    left: 14%;
+    top: 55%;
+    transform: translateY(-50%);
+    overflow: hidden;
+}
+.slider{
+    display: inline-flex;
+    transition: 0.5s ease;
+}
+.slider-col{
+    width: 600px;
+    height: 280px;
+
+}
+.slider-col h1{
+    color: #000;
+    font-size: 80px;
+    font-weight: 100;
+    margin: 10px 0;
+}
+.slider-col p{
+    color: #000;
+    font-size: 15px;
+    line-height: 25px;
+
+}
+.slider-col a{
+    display: inline-block;
+    text-decoration: none;
+    color: #000;
+    background: #5c9aeb;
+    font-size: 15px;
+    padding: 10px 35px;
+    border-radius: 25px;
+    margin-top: 25px;
+}
+.controller{
+    width: 1px;
+    height: 320px;
+    display: block;
+    background: #c0c0c0;
+    position: absolute;
+    top: 55%;
+    right: 50px;
+    transform: translateY(-50%);
+}
+#line1, #line2, #line3, #line4{
+    height: 80px;
+    width: 10px;
+    cursor: pointer;
+    transform: translateX(-50%);
+}
+#active{
+    width: 5px;
+    height: 80px;
+    border-radius: 10px;
+    background: #fff;
+    position: absolute;
+    top: 0;
+    transform: translateX(-50%);
+    transition: 0.5s ease;
+}
+
+/*footer*/
+
+.foter{
+    width: 100%;
+    background: #05364d;
+
+}
+.footer{
+    background-color: #05364d;
+    height: 200px;
+    text-align: center;
+    padding: 3.125rem 0;
+    margin-top: 50px;
+    width: 100%;
+}
+.footer_brand img{
+    width: 64px;
+}
+.footer_item{
+    display: inline-block;
+    color: #FFFFFF;
+    text-decoration: none;
+    text-align: center;
+}
+.footer_item a{
+    color: #FFFFFF;
+    text-decoration: none;
+    text-align: center;
+    padding: 0 20px;
+}
+.footer-medias{
+    list-style: none;
+}
+.footer-media{
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    background: #FFFFFF;
+    border-radius: 36px;
+    color: #05364d;
+    font-size: 16px;
+    margin-right: 12px;
+}
+.footer-media a{
+    color: #05364d;
+}
+.footer-media:hover {
+    background: #05364d;
+}
+.footer-media:hover i{
+    color: #FFFFFF;
+}
